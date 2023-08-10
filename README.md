@@ -116,8 +116,8 @@ rspec ./spec/solver_spec.rb
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Add more test cases
-- Add more methods
+- [ ] **Add more classes**
+- [ ] **Add more test cases**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
