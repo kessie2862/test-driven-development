@@ -19,4 +19,20 @@ class Solver
     reversed_text = word.reverse
     reversed_text
   end
+
+  def self.fizzbuzz(n)
+    divisible_by_3 = (n % 3 == 0)
+    divisible_by_5 = (n % 5 == 0)
+  
+    if divisible_by_3 && divisible_by_5
+      "fizzbuzz"
+    elsif divisible_by_3
+      "fizz"
+    elsif divisible_by_5
+      "buzz"
+    else
+      n.to_s
+    end
+  end
+  
 end
