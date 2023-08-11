@@ -1,5 +1,5 @@
 class Solver
-    attr_accessor :factorial
+  attr_accessor :factorial
 
   def self.factorial(num)
     if num.zero?
@@ -16,23 +16,21 @@ class Solver
   end
 
   def self.reverse(word)
-    reversed_text = word.reverse
-    reversed_text
+    word.reverse
   end
 
-  def self.fizzbuzz(n)
-    divisible_by_3 = (n % 3 == 0)
-    divisible_by_5 = (n % 5 == 0)
-  
-    if divisible_by_3 && divisible_by_5
-      "fizzbuzz"
-    elsif divisible_by_3
-      "fizz"
-    elsif divisible_by_5
-      "buzz"
+  def self.fizzbuzz(num)
+    divisible_by_three = (num % 3).zero?
+    divisible_by_five = (num % 5).zero?
+
+    if divisible_by_three && divisible_by_five
+      'fizzbuzz'
+    elsif divisible_by_three
+      'fizz'
+    elsif divisible_by_five
+      'buzz'
     else
-      n.to_s
+      num.to_s
     end
   end
-  
 end
